@@ -51,11 +51,13 @@ else:
     # HTML'yi Streamlit'e ekle
     st.markdown(countdown_html, unsafe_allow_html=True)
 
-import random 
-source_links = ["https://www.youtube.com/watch?v=Y1ohJumDYF4", "https://www.youtube.com/watch?v=AYPJhuidReg","https://www.youtube.com/watch?v=z9SzHvp7Lu0", "https://www.youtube.com/watch?v=fr54CX_6ERk", "https://www.youtube.com/watch?v=1yEeLRoWIhA"]
-selected_link = random.choice(source_links)
+
 
 if now.hour%2 == 0  and (now.minute == 47 or now.minute == 30 or now.minute == 15 or now.minute == 0 or now.minute == 54):
+    import random 
+    source_links = ["https://www.youtube.com/watch?v=Y1ohJumDYF4", "https://www.youtube.com/watch?v=AYPJhuidReg","https://www.youtube.com/watch?v=z9SzHvp7Lu0", "https://www.youtube.com/watch?v=fr54CX_6ERk", "https://www.youtube.com/watch?v=1yEeLRoWIhA"]
+    selected_link = random.choice(source_links)
+    
     st.markdown(
         f"""
         <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; font-family: Arial, sans-serif; gap: 20px; margin-top: 20px;">
@@ -70,3 +72,5 @@ if now.hour%2 == 0  and (now.minute == 47 or now.minute == 30 or now.minute == 1
         """,
         unsafe_allow_html=True,
     )
+    
+st.divider()    
