@@ -7,7 +7,7 @@ st_autorefresh(interval=1000, key="counter")
 
 
 now = datetime.now()
-
+st.write(now)
 # 5 Şubat 23:59:00 hedef zamanı
 target_date = datetime(year=2025, month=2, day=5, hour=23, minute=59, second=59)
 
@@ -54,7 +54,7 @@ import random
 source_links = ["https://www.youtube.com/watch?v=Y1ohJumDYF4", "https://www.youtube.com/watch?v=AYPJhuidReg","https://www.youtube.com/watch?v=z9SzHvp7Lu0", "https://www.youtube.com/watch?v=fr54CX_6ERk", "https://www.youtube.com/watch?v=1yEeLRoWIhA"]
 selected_link = random.choice(source_links)
 
-if now.hour%2 == 0  and (now.minute == 45 or now.minute == 30 or now.minute == 15 or now.minute == 0):
+if now.hour%2 == 0  and (now.minute == 47 or now.minute == 30 or now.minute == 15 or now.minute == 0):
     st.markdown(
         f"""
         <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; font-family: Arial, sans-serif; gap: 20px; margin-top: 20px;">
